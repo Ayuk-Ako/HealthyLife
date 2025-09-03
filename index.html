@@ -33,11 +33,19 @@
     .glass-sidebar .brand{
       display:flex; align-items:center; gap:.6rem; padding:1.2rem 1.25rem 1rem;
     }
-    .brand-logo{
+    /* .brand-logo{
       width:42px; height:42px; border-radius:12px; display:grid; place-items:center;
       background: radial-gradient(120% 120% at 10% 10%, #49dcb1, #1a936f);
       color:#fff; font-weight:700; box-shadow: inset 0 0 0 3px rgba(255,255,255,.4);
-    }
+    } */
+        .brand-logo img {
+    width: 80px; /* Set a reasonable width */
+    height: 80px; /* Set a reasonable height */
+    object-fit: cover; /* Ensure the image fits nicely */
+    border-radius: 50%; /* Make it circular */
+    border: none; /* Remove any border */
+    box-shadow: none; /* Remove any shadow */
+  }
     .brand-title{font-weight:800; letter-spacing:.2px; color:#0f5132;}
 
     .nav-sep{height:1px; background:linear-gradient(90deg, transparent, rgba(0,0,0,.08), transparent); margin:.5rem 1.25rem;}
@@ -84,10 +92,10 @@
   <!-- Sidebar (Glassmorphism) -->
   <aside class="glass-sidebar" id="sidebar">
     <div class="brand">
-      <div class="brand-logo">HL</div>
+      <div class="brand-logo"><img src="img/logo.jpg" alt="beszorg"></div>
       <div>
-        <div class="brand-title h5 mb-0">HealthyLife</div>
-        <small class="text-muted">Evidence‑based wellness</small>
+        <div class="brand-title h5 mb-0">BESZORG</div>
+        <small class="text-muted">CAREGIVER</small>
       </div>
       <button class="btn btn-sm btn-outline-success ms-auto d-lg-none" id="closeSidebar" aria-label="Close sidebar"><i class="bi bi-x"></i></button>
     </div>
@@ -138,7 +146,7 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <img src="https://images.unsplash.com/photo-1580281657527-47df3b4b3a8b?q=80&w=1200&auto=format&fit=crop" alt="Healthy lifestyle" class="img-fluid rounded-4 shadow-sm border" />
+            <img src="img/logo.jpg" alt="beszorg logo" class="img-fluid rounded-square">
           </div>
         </div>
       </div>
